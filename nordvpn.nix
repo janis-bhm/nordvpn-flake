@@ -90,8 +90,8 @@ in
       ln -s ${nordVPNfhs}/bin/nordvpnd $out/bin
       ln -s ${nordVPNBase}/share/* $out/share/
       ln -s ${nordVPNBase}/var $out/
-      chmod 750 $out/var/lib/nordvpn/
-      chmod 750 $out/var/lib/nordvpn/data/
+      chmod 750 ${nordVPNBase}/var/lib/nordvpn/
+      chmod 750 ${nordVPNBase}/var/lib/nordvpn/data/
       runHook postInstall
     '';
 
